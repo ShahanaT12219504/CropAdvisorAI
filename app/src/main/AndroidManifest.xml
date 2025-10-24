@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CropAdvisorAI">
         <activity
+            android:name=".ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
