@@ -1,43 +1,51 @@
 package com.example.cropadvisorai
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.jvm.java
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.cropadvisorai.ui.HomeFragment
+import com.example.cropadvisorai.ui.AgriChatFragmentLogic
+import com.example.cropadvisorai.ui.AgriChecklistFragment
+import com.example.cropadvisorai.ui.ProfileFragment // Assuming this is simplified
+import com.example.cropadvisorai.ui.ResearchFragment // Renamed Explore/Research
+// For Maps (Unit V)
+import com.google.android.gms.maps.SupportMapFragment // Placeholder import
 
 class MainActivity : AppCompatActivity() {
 
-    // main
-    private lateinit var soilType: EditText
-    private lateinit var nitrogen: EditText
-    private lateinit var ph: EditText
-    private lateinit var temp: EditText
-    private lateinit var rainfall: EditText
-    private lateinit var humidity: EditText
-    private lateinit var btnRecommend: Button
+    private lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        // NOTE: We now use the new host layout, not the old activity_main.xml
+        setContentView(R.layout.main_activity_host)
 
-        soilType = findViewById(R.id.soilType)
-        nitrogen = findViewById(R.id.nitrogen)
-        ph = findViewById(R.id.ph)
-        temp = findViewById(R.id.temp)
-        rainfall = findViewById(R.id.rainfall)
-        humidity = findViewById(R.id.humidity)
-        btnRecommend = findViewById(R.id.btnRecommend)
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        btnRecommend.setOnClickListener {
-            val intent = Intent(this, ResultActivity::class.java)
-            intent.putExtra("soil", soilType.text.toString())
-            intent.putExtra("nitrogen", nitrogen.text.toString())
-            intent.putExtra("ph", ph.text.toString())
-            intent.putExtra("temp", temp.text.toString())
-            intent.putExtra("rainfall", rainfall.text.toString())
-            intent.putExtra("humidity", humidity.text.toString())
-            startActivity(intent)
+        // Load the initial fragment (The Advisor)
+        if (savedInstanceState == null) {
+            loadFragment(HomeFragment())
         }
+
+        // Setup Bottom Navigation Listener
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            val selectedFragment: Fragment = when (item.itemId) {
+                R.id.nav_home -> HomeFragment() // Crop Advisor Input
+                R.id.nav_explore -> ResearchFragment() // Resources/Explore
+                R.id.nav_maps -> AgriChatFragmentLogic() // Using Chat as the 3rd item for now
+                R.id.nav_profile -> ProfileFragment()
+                R.id.nav_checklist -> AgriChecklistFragment() // Separate Checklist Item
+                else -> HomeFragment()
+            }
+            loadFragment(selectedFragment)
+            true
+        }
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
     }
 }
