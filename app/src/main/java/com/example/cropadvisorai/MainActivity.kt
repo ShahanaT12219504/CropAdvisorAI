@@ -38,8 +38,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("rainfall", rainfall.text.toString())
             intent.putExtra("humidity", humidity.text.toString())
             startActivity(intent)
-            //testing
-            Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
         }
     }
 }
