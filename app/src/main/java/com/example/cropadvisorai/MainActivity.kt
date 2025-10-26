@@ -8,6 +8,7 @@ import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
 
+    // main
     private lateinit var soilType: EditText
     private lateinit var nitrogen: EditText
     private lateinit var ph: EditText
@@ -37,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("rainfall", rainfall.text.toString())
             intent.putExtra("humidity", humidity.text.toString())
             startActivity(intent)
+            //testing
+            Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
         }
     }
 }
