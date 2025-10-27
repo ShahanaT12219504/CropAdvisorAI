@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    // IMPORTANT: Add the KAPT plugin for future Room database integration (Unit IV)
+    kotlin("kapt")
 }
 
 android {
@@ -43,6 +45,24 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.fragment.ktx) // New: Fragment KTX
+
+    // --- Syllabus Requirement: Coroutines (Unit II) & Lifecycle ---
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // --- AI Integration (Retrofit/Gemini API) ---
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp.logging) // Optional but helpful for debugging network calls
+
+    // --- Syllabus Requirement: Room (Unit IV - Placeholder for future implementation) ---
+    // implementation("androidx.room:room-runtime:2.6.0")
+    // kapt("androidx.room:room-compiler:2.6.0")
+    // implementation("androidx.room:room-ktx:2.6.0")
+
+    // --- Testing ---
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

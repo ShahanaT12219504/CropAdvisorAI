@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     android:background="@color/white">
 
@@ -43,7 +44,7 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:contentDescription="Add Task"
-        android:src="@drawable/ic_add"
+        android:src="@drawable/ic_checklist"
         app:tint="@android:color/white"
         android:backgroundTint="@color/green_700"/>
 
