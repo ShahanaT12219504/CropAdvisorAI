@@ -1,14 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeFragment">
+    android:background="@color/white"
+    android:padding="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="🌾 SmartCrop Advisor"
+            android:textSize="28sp"
+            android:textColor="@color/green_700"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Set Environmental Parameters"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <!-- 1. Soil Type (Dropdown/Spinner) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Soil Type" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="15dp" android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerSoilType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_700"
+            android:padding="12dp" />
+
+        <!-- 2. Nitrogen (Slider) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Nitrogen (%)" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="20dp" android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvNitrogenValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="50%"
+            android:textSize="14sp"
+            android:textColor="@color/green_700" />
+        <SeekBar
+            android:id="@+id/sliderNitrogen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/green_700"
+            android:thumbTint="@color/green_700" />
+
+        <!-- 3. pH (Slider) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. Soil pH Level (0.0 - 14.0)" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="20dp" android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvPhValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="7.0"
+            android:textSize="14sp"
+            android:textColor="@color/green_700" />
+        <SeekBar
+            android:id="@+id/sliderPh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="140"
+            android:progress="70"
+            android:progressTint="@color/green_700"
+            android:thumbTint="@color/green_700" />
+
+        <!-- 4. Temperature (Slider) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. Average Temperature (°C) (0 - 50)" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="20dp" android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvTempValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="25°C"
+            android:textSize="14sp"
+            android:textColor="@color/green_700" />
+        <SeekBar
+            android:id="@+id/sliderTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="25"
+            android:progressTint="@color/green_700"
+            android:thumbTint="@color/green_700" />
+
+        <!-- 5. Rainfall (Slider) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. Rainfall (mm) (0 - 3000)" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="20dp" android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvRainfallValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="1500 mm"
+            android:textSize="14sp"
+            android:textColor="@color/green_700" />
+        <SeekBar
+            android:id="@+id/sliderRainfall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="3000"
+            android:progress="1500"
+            android:progressTint="@color/green_700"
+            android:thumbTint="@color/green_700" />
+
+        <!-- 6. Humidity (Slider) -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. Humidity (%) (0 - 100)" android:textColor="@color/black" android:textStyle="bold" android:layout_marginTop="20dp" android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvHumidityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="50%"
+            android:textSize="14sp"
+            android:textColor="@color/green_700" />
+        <SeekBar
+            android:id="@+id/sliderHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/green_700"
+            android:thumbTint="@color/green_700" />
+
+        <Button
+            android:id="@+id/btnRecommend"
+            android:text="Get AI Crop Recommendation"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/green_700"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -54,7 +54,6 @@ id tvTempValue
 id tvUserName
 id tv_location_status
 id txtSummary
-layout activity_main
 layout activity_result
 layout activity_splash
 layout fragment_agri_chat
