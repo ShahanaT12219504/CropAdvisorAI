@@ -1,6 +1,6 @@
 package com.example.cropadvisorai
 
-data class Content(
-    val parts: List<Part>? = null,
+data class ApiContent(
+    val parts: List<ApiPart>? = null,
     val role: String? = null
 )

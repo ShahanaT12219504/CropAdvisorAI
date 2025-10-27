@@ -7,6 +7,10 @@
     <color name="white">#FFFFFF</color>
     <string name="app_name">CropAdvisorAI</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="RoundedImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
     <style name="Theme.CropAdvisorAI" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/green_700</item>
     </style>

@@ -35,11 +35,11 @@ com.example.cropadvisorai.app-lifecycle-runtime-ktx-2.6.2-33 C:\Users\CHELSA\.gr
 com.example.cropadvisorai.app-core-viewtree-1.0.0-34 C:\Users\CHELSA\.gradle\caches\8.13\transforms\fb31f5878144cc730529c68ca3625605\transformed\core-viewtree-1.0.0\res
 com.example.cropadvisorai.app-fragment-1.6.2-35 C:\Users\CHELSA\.gradle\caches\8.13\transforms\ff4a94234ade456d0d32b91d81593965\transformed\fragment-1.6.2\res
 com.example.cropadvisorai.app-appcompat-resources-1.7.1-36 C:\Users\CHELSA\.gradle\caches\8.13\transforms\ffc93ec422c5f71378bae0324a72d9ab\transformed\appcompat-resources-1.7.1\res
-com.example.cropadvisorai.app-pngs-37 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\generated\res\pngs\debug
-com.example.cropadvisorai.app-resValues-38 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\generated\res\resValues\debug
-com.example.cropadvisorai.app-updated_navigation_xml-39 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\generated\updated_navigation_xml\debug
-com.example.cropadvisorai.app-packageDebugResources-40 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.cropadvisorai.app-packageDebugResources-41 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.cropadvisorai.app-debug-42 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.cropadvisorai.app-debug-43 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\src\debug\res
-com.example.cropadvisorai.app-main-44 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorApp\app\src\main\res
+com.example.cropadvisorai.app-pngs-37 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\generated\res\pngs\debug
+com.example.cropadvisorai.app-resValues-38 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\generated\res\resValues\debug
+com.example.cropadvisorai.app-updated_navigation_xml-39 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\generated\updated_navigation_xml\debug
+com.example.cropadvisorai.app-packageDebugResources-40 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.cropadvisorai.app-packageDebugResources-41 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.cropadvisorai.app-debug-42 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.cropadvisorai.app-debug-43 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\src\debug\res
+com.example.cropadvisorai.app-main-44 E:\NOTES COMPLETE\Notes stuff\sem 7 notes\cse 227\CropAdvisorAI\app\src\main\res

@@ -70,6 +70,7 @@ mipmap ic_launcher_round
 string app_name
 string hello_blank_fragment
 style Base.Theme.CropAdvisorAI
+style RoundedImage
 style Theme.CropAdvisorAI
 xml backup_rules
 xml data_extraction_rules
