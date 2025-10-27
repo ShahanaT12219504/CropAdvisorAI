@@ -9,7 +9,7 @@ import com.example.cropadvisorai.ui.AgriChatFragmentLogic
 import com.example.cropadvisorai.ui.AgriChecklistFragment
 import com.example.cropadvisorai.ui.ProfileFragment // Assuming this is simplified
 import com.example.cropadvisorai.ui.ResearchFragment // Renamed Explore/Research
-// For Maps (Unit V)
+// removed gms import
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // NOTE: We now use the new host layout, not the old activity_main.xml
         setContentView(R.layout.main_activity_host)
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
