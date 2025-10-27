@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#2E7D32</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">CropAdvisorAI</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="Theme.CropAdvisorAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/green_700</item>
+    </style>
+</resources>
