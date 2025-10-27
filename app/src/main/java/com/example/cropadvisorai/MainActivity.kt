@@ -10,7 +10,6 @@ import com.example.cropadvisorai.ui.AgriChecklistFragment
 import com.example.cropadvisorai.ui.ProfileFragment // Assuming this is simplified
 import com.example.cropadvisorai.ui.ResearchFragment // Renamed Explore/Research
 // For Maps (Unit V)
-import com.google.android.gms.maps.SupportMapFragment // Placeholder import
 
 class MainActivity : AppCompatActivity() {
 
