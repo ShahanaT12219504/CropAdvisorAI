@@ -23,12 +23,6 @@
         android:textColor="@color/black"
         android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Optimizing crop yield with AI."
-        android:textSize="16sp"
-        android:textColor="#666666" />
 
     <Button
         android:layout_width="wrap_content"

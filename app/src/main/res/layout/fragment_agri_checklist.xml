@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleText"
-        android:text="Syllabus-focused tasks for efficient farming."
+        android:text="subtitle"
         android:textSize="14sp"
         android:textColor="#666666"
         android:layout_marginBottom="16dp" />
